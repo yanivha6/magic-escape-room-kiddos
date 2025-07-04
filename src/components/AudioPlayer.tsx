@@ -5,16 +5,26 @@ import { Card } from '@/components/ui/card';
 interface AudioPlayerProps {
   audioUrl?: string;
   placeholder?: string;
+  autoplay?: boolean;
 }
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({ 
   audioUrl, 
-  placeholder = "אין קובץ שמע זמין כרגע" 
+  placeholder = "אין קובץ שמע זמין כרגע",
+  autoplay = false
 }) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
+
+  React.useEffect(() => {
+    if (autoplay && audioRef.current && audioUrl) {
+      audioRef.current.play().catch(() => {});
+      setIsPlaying(true);
+    }
+    // eslint-disable-next-line
+  }, [autoplay, audioUrl]);
 
   const togglePlayPause = () => {
     if (!audioRef.current || !audioUrl) return;

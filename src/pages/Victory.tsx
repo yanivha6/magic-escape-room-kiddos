@@ -45,7 +45,8 @@ const Victory = () => {
 
           {/* Audio Player */}
           <AudioPlayer 
-            placeholder="הקלטת ניצחון - בקרוב יתווסף שמע חגיגי"
+            placeholder="הקלטת ניצחון"
+            audioUrl="https://escaperoomstorge.blob.core.windows.net/escape/final.mp3"
           />
 
           {/* Magic Effects */}

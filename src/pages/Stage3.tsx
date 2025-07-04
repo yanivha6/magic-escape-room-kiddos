@@ -63,7 +63,7 @@ const Stage3 = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-2xl">🔍</span>
-                <p>מי אני?</p>
+                <p>מי אני? (הכניסו ספרה אחת בלבד)</p>
               </div>
             </div>
           </Card>
@@ -74,14 +74,15 @@ const Stage3 = () => {
             {/* Audio Player */}
             <AudioPlayer 
               placeholder="הקלטה לשלב 3 - בקרוב יתווסף שמע"
+              audioUrl="https://escaperoomstorge.blob.core.windows.net/escape/octopus.m4a"
             />
             
             {/* Code Input */}
             <CodeInput
-              correctCode="143"
+              correctCode="4"
               onSuccess={handleSuccess}
-              placeholder="הכנס את התשובה..."
-              maxLength={3}
+              placeholder="הכנס ספרה אחת..."
+              maxLength={1}
             />
             
             {/* Hint Card */}

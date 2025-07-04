@@ -74,6 +74,7 @@ const Stage2 = () => {
             {/* Audio Player */}
             <AudioPlayer 
               placeholder="הקלטה לשלב 2 - בקרוב יתווסף שמע"
+              audioUrl="https://escaperoomstorge.blob.core.windows.net/escape/pjmasks.mp3"
             />
             
             {/* Code Input */}

@@ -59,6 +59,7 @@ const Game = () => {
             {/* Audio Player */}
             <AudioPlayer 
               placeholder="הקלטת הקדמה - בקרוב יתווסף שמע"
+              audioUrl="https://escaperoomstorge.blob.core.windows.net/escape/opening.m4a"
             />
             
             {/* Start Button */}
