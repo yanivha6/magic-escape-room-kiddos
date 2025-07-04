@@ -4,16 +4,15 @@ import { Button } from '@/components/ui/button';
 import AudioPlayer from '@/components/AudioPlayer';
 import CodeInput from '@/components/CodeInput';
 
-const Stage1 = () => {
+const Stage2 = () => {
   const navigate = useNavigate();
 
   const handleSuccess = () => {
-    // Navigate to next stage (stage 2) when code is correct
-    navigate('/stage/2');
+    navigate('/stage/3');
   };
 
   const goBack = () => {
-    navigate('/');
+    navigate('/stage/1');
   };
 
   return (
@@ -27,44 +26,44 @@ const Stage1 = () => {
             variant="mystical"
             className="absolute top-6 left-6"
           >
-            ← חזרה לתפריט
+            ← חזרה לשלב קודם
           </Button>
           
           <h1 className="text-5xl font-bold text-magic-purple mb-4">
-            🌟 שלב 1: החידה הראשונה 🌟
+            🌟 שלב 2: המשימה הקסומה 🌟
           </h1>
           <div className="text-2xl text-magic-gold font-semibold">
-            מקום המפגש הקסום
+            הקוד הסודי מחכה לך!
           </div>
         </div>
 
         {/* Main Content */}
         <div className="grid gap-8 lg:grid-cols-2">
           
-          {/* Riddle Card */}
+          {/* Instructions Card */}
           <Card className="p-8 bg-gradient-magical text-primary-foreground shadow-magical">
             <h2 className="text-3xl font-bold mb-6 text-center">
-              🧩 החידה הקסומה 🧩
+              🔮 המשימה הבאה 🔮
             </h2>
             
             <div className="bg-primary-foreground/10 rounded-lg p-6 mb-6">
               <p className="text-2xl leading-relaxed text-center font-bold">
-                "במקום בו איש זאב וחייזר נפגשים נוצרים קסמים חדשים"
+                חפש בחדר את הקוד הסודי בן 3 הספרות!
               </p>
             </div>
             
             <div className="text-lg space-y-3">
               <div className="flex items-center space-x-3">
-                <span className="text-2xl">🤔</span>
-                <p>איפה יכולים להיפגש איש זאב וחייזר?</p>
+                <span className="text-2xl">🔍</span>
+                <p>הקוד מוסתר במקום מיוחד</p>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-2xl">✨</span>
-                <p>חפשו במקום שיוצר קסמים חדשים...</p>
+                <p>רק קוסמים אמיתיים יכולים למצוא אותו</p>
               </div>
               <div className="flex items-center space-x-3">
-                <span className="text-2xl">🔍</span>
-                <p>הרמז מוסתר בחדר!</p>
+                <span className="text-2xl">🎯</span>
+                <p>תחפשו היטב!</p>
               </div>
             </div>
           </Card>
@@ -74,34 +73,16 @@ const Stage1 = () => {
             
             {/* Audio Player */}
             <AudioPlayer 
-              placeholder="הקלטה לשלב 1 - בקרוב יתווסף שמע"
+              placeholder="הקלטה לשלב 2 - בקרוב יתווסף שמע"
             />
             
             {/* Code Input */}
             <CodeInput
-              correctCode="1352"
+              correctCode="555"
               onSuccess={handleSuccess}
-              placeholder="הכנס 4 ספרות..."
-              maxLength={4}
+              placeholder="הכנס 3 ספרות..."
+              maxLength={3}
             />
-            
-            {/* Hint Card */}
-            <Card className="p-6 bg-gradient-sparkle shadow-sparkle">
-              <h3 className="text-xl font-bold text-accent-foreground mb-4 text-center">
-                💡 רמזים נוספים 💡
-              </h3>
-              <div className="text-center space-y-2">
-                <p className="text-accent-foreground">
-                  🌙 חפשו במקום חשוך ומסתורי
-                </p>
-                <p className="text-accent-foreground">
-                  🎭 מקום שמספר סיפורים
-                </p>
-                <p className="text-accent-foreground">
-                  📚 מקום עם הרבה חכמה
-                </p>
-              </div>
-            </Card>
           </div>
         </div>
 
@@ -111,14 +92,17 @@ const Stage1 = () => {
             התקדמות במשחק
           </div>
           <div className="flex justify-center space-x-4">
-            <div className="w-8 h-8 rounded-full bg-magic-purple text-primary-foreground flex items-center justify-center font-bold">
-              1
+            <div className="w-8 h-8 rounded-full bg-magic-gold text-primary-foreground flex items-center justify-center font-bold">
+              ✓
             </div>
-            <div className="w-8 h-8 rounded-full bg-muted text-muted-foreground flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-magic-purple text-primary-foreground flex items-center justify-center font-bold">
               2
             </div>
             <div className="w-8 h-8 rounded-full bg-muted text-muted-foreground flex items-center justify-center">
               3
+            </div>
+            <div className="w-8 h-8 rounded-full bg-muted text-muted-foreground flex items-center justify-center">
+              4
             </div>
           </div>
         </div>
@@ -127,4 +111,4 @@ const Stage1 = () => {
   );
 };
 
-export default Stage1;
+export default Stage2;
