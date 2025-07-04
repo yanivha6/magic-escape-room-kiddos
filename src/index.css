@@ -7,36 +7,56 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+:root {
+    /* Magical Color Palette */
+    --background: 280 100% 98%;
+    --foreground: 280 20% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 280 50% 95%;
+    --card-foreground: 280 20% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 280 50% 95%;
+    --popover-foreground: 280 20% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 280 90% 65%;
+    --primary-foreground: 280 10% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 320 80% 80%;
+    --secondary-foreground: 280 20% 10%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 280 40% 90%;
+    --muted-foreground: 280 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 100% 70%;
+    --accent-foreground: 280 20% 10%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 280 10% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 280 30% 85%;
+    --input: 280 30% 85%;
+    --ring: 280 90% 65%;
 
-    --radius: 0.5rem;
+    /* Magic Design Tokens */
+    --magic-purple: 280 90% 65%;
+    --magic-purple-light: 280 80% 85%;
+    --magic-gold: 45 100% 70%;
+    --magic-gold-light: 45 100% 85%;
+    --magic-sparkle: 60 100% 80%;
+    
+    /* Gradients */
+    --gradient-magical: linear-gradient(135deg, hsl(var(--magic-purple)), hsl(var(--magic-purple-light)));
+    --gradient-sparkle: linear-gradient(45deg, hsl(var(--magic-gold)), hsl(var(--magic-sparkle)));
+    --gradient-mystical: linear-gradient(180deg, hsl(var(--background)), hsl(var(--magic-purple-light)));
+    
+    /* Shadows */
+    --shadow-magical: 0 10px 30px -10px hsl(var(--magic-purple) / 0.3);
+    --shadow-sparkle: 0 0 20px hsl(var(--magic-gold) / 0.4);
+    
+    /* Animations */
+    --transition-magical: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
