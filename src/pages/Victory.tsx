@@ -11,7 +11,7 @@ const Victory = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-magical p-6">
+    <div className="min-h-screen bg-gradient-magical p-6" dir="rtl">
       <div className="max-w-4xl mx-auto text-center">
         
         {/* Victory Header */}

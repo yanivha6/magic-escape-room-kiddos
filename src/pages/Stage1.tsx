@@ -17,7 +17,7 @@ const Stage1 = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-mystical p-6">
+    <div className="min-h-screen bg-gradient-mystical p-6" dir="rtl">
       <div className="max-w-4xl mx-auto">
         
         {/* Header */}
@@ -85,23 +85,6 @@ const Stage1 = () => {
               maxLength={4}
             />
             
-            {/* Hint Card */}
-            <Card className="p-6 bg-gradient-sparkle shadow-sparkle">
-              <h3 className="text-xl font-bold text-accent-foreground mb-4 text-center">
-                💡 רמזים נוספים 💡
-              </h3>
-              <div className="text-center space-y-2">
-                <p className="text-accent-foreground">
-                  🌙 חפשו במקום חשוך ומסתורי
-                </p>
-                <p className="text-accent-foreground">
-                  🎭 מקום שמספר סיפורים
-                </p>
-                <p className="text-accent-foreground">
-                  📚 מקום עם הרבה חכמה
-                </p>
-              </div>
-            </Card>
           </div>
         </div>
 

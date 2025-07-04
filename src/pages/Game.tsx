@@ -11,7 +11,7 @@ const Game = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-mystical p-6">
+    <div className="min-h-screen bg-gradient-mystical p-6" dir="rtl">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">

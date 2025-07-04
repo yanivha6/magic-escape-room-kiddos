@@ -16,7 +16,7 @@ const Stage2 = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-mystical p-6">
+    <div className="min-h-screen bg-gradient-mystical p-6" dir="rtl">
       <div className="max-w-4xl mx-auto">
         
         {/* Header */}
