@@ -60,6 +60,8 @@ const CodeInput: React.FC<CodeInputProps> = ({
         <div className={`w-full max-w-xs ${isShaking ? 'animate-bounce' : ''}`}>
           <Input
             type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
             value={inputCode}
             onChange={(e) => setInputCode(e.target.value.slice(0, maxLength))}
             onKeyPress={handleKeyPress}
